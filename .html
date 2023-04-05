@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-Fringe Homepage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        background-color: yellow;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        width: calc(100% / 25);
+        padding-bottom: calc(100% / 25);
+        border: 1px solid black;
+        margin: 0;
+        background-color: white;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>E-Fringe Homepage</h1>
+    <p>Thank you for visiting the E-Fringe homepage! This page is a grid of 10,000 boxes, and you can buy each box for £1. Your ad will be displayed on this page for as long as the page exists.</p>
+    <p>To purchase boxes, simply click on the box you want to buy and follow the instructions on the next page.</p>
+    <div class="container">
+      <?php for ($i = 1; $i <= 10000; $i++) { ?>
+        <div class="box"></div>
+      <?php } ?>
+    </div>
+  </body>
+</html>
